@@ -1,6 +1,6 @@
 # Tic Tac Toe OOP
 
-Tic-Tac-Toe is one of the most simple games in history. So why not take it up a notch and make it more dynamic using OOP.
+Tic-Tac-Toe is one of the most simple games in history. So why not take it up a notch and make it more dynamic using OOP running in the terminal.
 
 ## Installation
 
