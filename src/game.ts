@@ -206,6 +206,4 @@ export class Game {
       this.play();
     }
   }
-
-  initGame() {}
 }
