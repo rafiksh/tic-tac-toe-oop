@@ -168,11 +168,10 @@ export class Game {
    * turn function play function
    */
   async play() {
-    const activePlayer = this._activePlayer;
     this._board.printBoardWithValues();
 
     const postion =
-      activePlayer._name === "COMPUTER"
+      this._activePlayer._name === "COMPUTER"
         ? this._board.generateRandomMove()
         : await this.getUserBoardPosition();
 
