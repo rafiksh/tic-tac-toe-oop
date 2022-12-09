@@ -6,7 +6,7 @@ Tic-Tac-Toe is one of the most simple games in history. So why not take it up a 
 
 Make sure to have NodeJs and a node package manager installed (I personally use `yarn`)
 
-Run:
+Install Dependencies:
 
 ```bash
 npm i
@@ -16,6 +16,18 @@ or
 
 ```bash
 yarn install
+```
+
+Run the app using
+
+```bash
+yarn start
+```
+
+or
+
+```bash
+npm start
 ```
 
 ## Usage
