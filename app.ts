@@ -4,7 +4,10 @@ import { INITIAL_QUESTIONS } from "./config";
 import { Player } from "./src/player";
 import { Game } from "./src/game";
 
-const start = async () => {
+const main = async () => {
+  console.clear();
+  console.log("Welcome to Tic Tac Toe");
+
   const { name, symbol, size } = await prompts(INITIAL_QUESTIONS);
 
   console.log(`Welcome ${name}`);
@@ -14,13 +17,6 @@ const start = async () => {
   const game = new Game(size, player);
 
   await game.play();
-};
-
-const main = async () => {
-  console.clear();
-  console.log("Welcome to Tic Tac Toe");
-
-  await start();
 };
 
 main();
