@@ -177,11 +177,15 @@ export class Game {
 
     this.makeMove(postion);
 
-    if (this.checkWin() || this.checkDraw()) {
+    const isWin = this.checkWin();
+    const isDraw = this.checkDraw();
+
+    if (isWin || isDraw) {
       this._board.printBoardWithValues();
-      this.checkDraw()
-        ? console.log("Game tied")
-        : console.log(`Congratulations ${this._activePlayer._name}!!!`);
+
+      isWin
+        ? console.log(`Congratulations ${this._activePlayer._name}!!!`)
+        : console.log("Game tied");
 
       const { playMore } = await prompts([
         {
